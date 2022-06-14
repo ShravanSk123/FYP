@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+        <title>{{ page_title }}</title>
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+        <!-- Ion Icons -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/ionicons.min.css') }}" />
+        <!-- Main CSS Style -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+        <!-- Responsive CSS Style -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}" />
+
+    </head>
+    <body>
+        {% block body %}
+    
+        {% endblock %}
+        <!-- jQuery Library -->
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+        <!-- Bootstrap Core JS -->
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <!-- Nice Scroll -->
+        <script src="{{ url_for('static', filename='js/jquery.nicescroll.min.js') }}"></script>
+        <!-- Main Script -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
